@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Custom Properties 
+------------------------------- */
+
+:root {
+  --primary-color: #162447;
+  --secondary-color: #e5e5e5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Bootstrap Overrides
+-------------------------------*/
+
+body {
+  font-size: 1.2rem;
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+}
+
+.list-group-item {
+  border-radius: 0.25rem;
+}
+
+button.list-group-item:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/* Option Right / Wrong Indicator
+---------------------------------- */
+
+.right {
+  background: var(--success);
+  color: var(--white);
+}
+
+.wrong {
+  background: var(--danger);
+  color: var(--white);
+}
+
+/* Footer
+---------------------------------- */
+
+footer {
+  background: var(--primary-color);
+}
+
+/* Popup
+---------------------------------- */
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050; /* Above Bootstrap fixed-bottom class */
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Media Queries
+-------------------------------- */
+
+@media (min-width: 992px) {
+  .list-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list-group-item {
+    flex: 0 1 49%;
+  }
+}
+
+@media (max-width: 552px) {
+  .popup-content {
+    font-size: 1rem;
+    width: 75% !important;
+  }
+
+  .popup-content h1 {
+    font-size: 1.2rem;
+  }
 }
