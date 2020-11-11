@@ -71,6 +71,8 @@ footer {
   min-height: 100vh;
   z-index: 1050; /* Above Bootstrap fixed-bottom class */
   background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media Queries
