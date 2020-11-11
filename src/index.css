@@ -66,6 +66,8 @@ footer {
 .popup {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   min-height: 100vh;
   z-index: 1050; /* Above Bootstrap fixed-bottom class */
   background: rgba(0, 0, 0, 0.4);
