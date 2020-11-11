@@ -174,7 +174,7 @@ class Quiz extends Component {
 
       // generate popupTitle base on grade
       if (grade < 40) {
-        popupTitle = "Ooops! Poor!";
+        popupTitle = "Poor!";
       } else if (grade >= 40 && grade < 50) {
         popupTitle = "Fair!";
       } else if (grade >= 50 && grade < 75) {
