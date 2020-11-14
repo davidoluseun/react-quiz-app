@@ -7,7 +7,7 @@ const Popup = ({ isVisible, title, text, btnText, onStart }) => {
 
   return ReactDOM.createPortal(
     <div className="popup" style={{ display }}>
-      <div className="rounded bg-white text-dark text-center w-50">
+      <div className="popup-content rounded bg-white text-dark text-center w-50">
         <h1 className="h4 rounded-top bg-primary text-white p-3 mb-0">
           {title}
         </h1>
