@@ -14,7 +14,10 @@ const Questions = ({
           {questionNumber} / {totalQuestions}
         </div>
       </div>
-      <p className="text-center">{currentQuestion}</p>
+      <p
+        className="text-center"
+        dangerouslySetInnerHTML={{ __html: currentQuestion }}
+      />
     </div>
   );
 };

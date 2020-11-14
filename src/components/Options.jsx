@@ -12,9 +12,8 @@ const Options = ({ options, onAnswer, rightWrongClass }) => {
           key={option}
           data-id={i}
           className={btnClasses + rightWrongClass[i]}
-        >
-          {option}
-        </button>
+          dangerouslySetInnerHTML={{ __html: option }}
+        />
       ))}
     </div>
   );
