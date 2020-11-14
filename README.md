@@ -1,3 +1,3 @@
 # A React Quiz App
 
-[Live link](https://aod-react-quiz-app.netlify.app/)
+[Live link](https://aod-react-quiz.netlify.app/)
