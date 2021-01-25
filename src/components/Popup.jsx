@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Popup = ({ isVisible, title, text, btnText, onStart }) => {
+const Popup = ({ isVisible, title, text, btnText, onStartQuiz }) => {
   // Set popup display style
   const display = isVisible ? "flex" : "none";
 
@@ -13,7 +13,7 @@ const Popup = ({ isVisible, title, text, btnText, onStart }) => {
         </h1>
         <div className="p-3">
           <p>{text}</p>
-          <button className="btn btn-primary" onClick={onStart}>
+          <button className="btn btn-primary" onClick={onStartQuiz}>
             {btnText}
           </button>
         </div>

@@ -245,7 +245,7 @@ class Quiz extends Component {
           title={popupTitle}
           text={popupText}
           btnText={popupBtnText}
-          onStart={this.handleStartQuiz}
+          onStartQuiz={this.handleStartQuiz}
         />
       </>
     );
